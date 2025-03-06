@@ -1,0 +1,1 @@
+//contains test codes of js
