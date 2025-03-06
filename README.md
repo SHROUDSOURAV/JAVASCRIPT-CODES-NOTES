@@ -1,3 +1,5 @@
+#   JavaScript Study Repository
+
 Welcome to my JavaScript Study Repository! 🚀 This repository serves as a structured collection of everything I have learned in JavaScript. It is designed for both personal reference and as a resource for others looking to strengthen their JavaScript skills.
 
 📌 About This Repository
