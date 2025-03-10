@@ -62,7 +62,7 @@ getDetails(object);
 
 const arr1 = [10,20,30,40,50];
 function display(arr){
-    for(i=0; i<arr.length; i++){
+    for(let i=0; i<arr.length; i++){
         console.log(arr[i]);
     }
 }
