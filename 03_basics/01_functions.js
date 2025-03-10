@@ -26,3 +26,45 @@ function isLoggedIn(username){
 }
 
 console.log(isLoggedIn("Sourav Bose"));
+
+/*
+... = can be spread operator or rest operator depending on usage
+the below code will return all the passed arguments in array structure
+*/
+function add2(...num1){
+    return num1;
+}
+
+//check the output. It's in array structure
+console.log(add2(10,20,30));
+
+/*
+Now let's create an object and call it's properties
+using a custom function and learn how to deal with 
+objects and functions together
+*/
+
+//object created
+const object = {
+    username: "coder",
+    id: "21A8"
+}
+
+//function taking object as parameter
+function getDetails(obj){
+    console.log(`Username is ${obj.username} and ID is ${obj.id}`);
+}
+
+//passing object as argument in function call
+getDetails(object);
+
+//function to take array as argument and print it
+
+const arr1 = [10,20,30,40,50];
+function display(arr){
+    for(i=0; i<arr.length; i++){
+        console.log(arr[i]);
+    }
+}
+
+display(arr1);
