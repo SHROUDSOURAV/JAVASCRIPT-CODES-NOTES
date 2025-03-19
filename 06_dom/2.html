@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Learning PART 2</title>
+</head>
+<body style="
+background-color:#212121; color:white;">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+        <div class="day">Friday</div>
+        <div class="day">Saturday</div>
+        <div class="day">Sunday</div>
+    </div>
+</body>
+<script>    //script tag used to inject javascript code
+    //querySelector ==> selecting element(class) in HTML
+
+    const parent = document.querySelector('.parent');  //selecting class element 
+    console.log(parent);
+    
+    //going from parent to child
+    console.log(parent.children);   //prints sub div elements of parent div
+                                    //HTML Collection data(array indexing can be used to access individual element)
+                                    //console.log(parent.children[2]);                                            
+    
+    //Let's print all the days using for-loop
+    //HTML Collection element is iterable
+    for(let i=0; i<parent.children.length; i++){
+        console.log(parent.children[i].innerHTML);  //innerHTML ==> prints HTML text 
+
+    }                                
+
+    //customizing color of element
+    parent.children[2].style.color="green";
+
+    //getting the first child element of parent div
+    console.log(parent.firstElementChild.innerHTML);
+    
+    //getting the last child element of parent div
+    console.log(parent.lastElementChild.innerHTML);
+
+    //getting child div (gives the first child) of parent div
+    const dayOne = document.querySelector('.day');
+    console.log(dayOne);
+
+    //going from first children element to parent element
+    console.log(dayOne.parentElement);
+
+    //get childnodes of parent div
+    console.log(parent.childNodes);     //NODESLIST is a complex tree structure
+                                        //contains various elements includes line breaks and comment lines as well
+
+</script>
+</html>
