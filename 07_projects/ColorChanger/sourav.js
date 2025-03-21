@@ -27,4 +27,4 @@ buttons.forEach( (button) => {
             body.style.backgroundColor="purple";
         }
     })
-})
+});
