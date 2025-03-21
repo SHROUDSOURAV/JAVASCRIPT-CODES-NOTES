@@ -1,4 +1,4 @@
-const buttons = document.querySelectorAll('.button');
+const buttons = document.querySelectorAll('.button');   //storing buttons as nodelist for using loop for styling 
 
 const body = document.querySelector("body");
 
