@@ -6,3 +6,5 @@ setInterval(function(){
     clock.innerHTML = date.toLocaleTimeString();
     //will continuously update the clock timing
 },1000)    //1 second = 1000 milliseconds
+
+//show time every 1 second
