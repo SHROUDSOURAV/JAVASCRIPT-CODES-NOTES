@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASYNC in Javascript</title>
+</head>
+<body style="background-color:#414141; color:aliceblue;">
+    <h1>Async in Javascript PART 1</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+
+    //setTimeout() => a function which present in browser calls an API(Appication Interface)
+    //handler => a callback function which may or maynot have a name
+    //callback function => function passed as argument to another function
+
+    setTimeout(function(){  //function definition
+        console.log("Sourav");
+                //after 2 seconds console.log() will be executed
+    },2000);    //2000 milliseconds
+
+    //referencing a function
+
+    const display = function(){
+        console.log("Bose");
+    }
+    setTimeout(display,3000);   //display is the handler => passed as argument
+                                //3 seconds = 3000 milliseconds delay
+
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = "Best Javascript";
+    }
+
+    const changeMe = setTimeout(changeText,4000);//delay change in text after 4 seconds
+
+
+    //<================ learning how to stop the timeout function() ================>
+    //using clearTimeout()
+    //clearTimeout() requires reference
+
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(changeMe);
+        console.log("STOPPED");
+    })
+
+</script>
+</html>
