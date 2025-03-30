@@ -82,3 +82,32 @@ async function consumePromiseFive(){
 }
 
 consumePromiseFive();
+
+
+/*fetch in Javascript
+The Fetch API is a modern interface in JavaScript that allows you to make HTTP requests. It replaces the older XMLHttpRequest method and provides a cleaner and more flexible way to fetch resources asynchronously. The Fetch API uses Promises, making it easier to work with asynchronous data.
+Fetch returns a promise.
+
+Fetch does two opearations 
+1) one part goes to allocate memory for data to store
+2) another part goes to make requests to retrieve data
+
+if request is made then it goes to resolved(sucessfull/unsucessful)
+otherwise goes to reject
+
+after request / rejection the data is stored as response which is global variable
+*/
+
+
+fetch('https://api.github.com/users/SHROUDSOURAV')
+.then((response) => {
+    return response.json()
+})
+.then((data) => {
+    console.log(data);
+})
+.catch((error) => console.log(error))
+
+// promise.all
+// yes this is also available, kuch reading aap b kro.
+
