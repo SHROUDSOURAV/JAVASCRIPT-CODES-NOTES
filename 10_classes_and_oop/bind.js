@@ -18,4 +18,4 @@ const obj2 = {
 //so upon binding the return values from newUser() function changes to values of obj2 data members
 const newUser1 = obj1.newUser.bind(obj2);
 
-console.log(newUser1());
+console.log(newUser1());    //newUser1() is a method
