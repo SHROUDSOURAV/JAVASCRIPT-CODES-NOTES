@@ -25,7 +25,7 @@ function User(username, roll, id){
 }
 const UserOne = User("Sourav",111,12345);
 console.log(UserOne);   //this overrides the current context values of data members 
-                        //that is why we create new object with constructor (new instance everytime)
+                        //that is why we create new object with constructor (new instance ever)
 
 
 //<============ CONSTRUCTOR ===============>
