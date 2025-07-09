@@ -1,0 +1,22 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.modeButton {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mode {
+    padding: 15px 25px;
+    font-size: 1.75rem;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+#mode:hover {
+    transform: scale(1.05);
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in JS</title>
+    <style>
+        div{
+            height:100px;
+            width:100px;
+            color:white;
+            background-color:dodgerblue;
+            border:2px solid black;
+        }
+        #box2{
+            height:100px;
+            widthL100px;
+            color:black;
+            background-color:greenyellow;
+            border:2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!-- clicking the above button will generate an event. Check the console section in network devtools to see the output -->
+    <!-- the console.log() + alert() both we will executed when the button is clicked -->
+    <button onclick="console.log('button clicked'); alert('say hello');">Click Me 1!</button>
+    
+    <!-- double clicking the button will execute the console.log() part -->
+    <!-- event executed when the button is double clicked -->
+    <button ondblclick="console.log('button double clicked');">Click me 2!</button>
+    
+    <!-- hovering or bringing the mouse pointer inside the div will execute the console.log() part -->
+    <!-- onmouseover event is used to trigger this event -->
+    <div onmouseover="console.log('mouse hovered inside div!');">this is a box</div>
+
+    <!-- the above events are called inline event handling -->
+    <!-- inline event handling is not optimised because it makes the HTML code bulky and confusing -->
+    <!-- we can target particular elements/nodes and trigger these events from the separate js file -->
+    <br>
+    <br>
+    <button id="bt1">Click me!</button>
+    <button id="bt2">Click me!!</button>
+    <div id="box2">this is a box2</div>
+
+    <script src="event1.js"></script>
+</body>
+</html>
